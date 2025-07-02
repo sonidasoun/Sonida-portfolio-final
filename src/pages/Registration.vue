@@ -4,7 +4,7 @@
         <Form :validation-schema="validationSchema" @submit="handleSubmit" class="space-y-4">
             <!-- Name Field -->
             <div>
-                <label class="block mb-1 text-sm font-medium text-gray-700">123Name</label>
+                <label class="block mb-1 text-sm font-medium text-gray-700">Name</label>
                 <Field name="name" type="text" v-model="form.name"
                     class="w-full px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
                     placeholder="Enter your name" />
