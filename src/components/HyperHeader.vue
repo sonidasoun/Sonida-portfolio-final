@@ -32,8 +32,8 @@
                         </li>
 
                         <li>
-                            <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> {{ $t('services') }}
-                            </a>
+                            <router-link class="text-gray-500 transition hover:text-gray-500/75" to="/upload"> {{ $t('services') }}
+                            </router-link>
                         </li>
 
                         <li>
@@ -47,11 +47,7 @@
                                 {{ $t('setting') }}
                             </router-link>
                         </li>
-                         <li>
-                            <router-link class="text-gray-500 transition hover:text-gray-500/75" to="/upload">
-                                {{ $t('upload') }}
-                            </router-link>
-                        </li>
+                        
                          <li>
                             <router-link class="text-gray-500 transition hover:text-gray-500/75" to="/fileview">
                                 {{ $t('fileview') }}

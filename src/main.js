@@ -5,6 +5,7 @@ import App from './App.vue'
 import router from './routes.js'
 
 import { createI18n } from 'vue-i18n'
+import FileViews from './pages/FileViews.vue'
 
 /**
  * About
@@ -26,6 +27,7 @@ const i18n = createI18n({
             services: 'Services',
             projects: 'Projects',
             setting: 'Setting',
+            fileview: 'File Views',
             productTitle: 'Welcome to our project',
         },
         khm: {
@@ -36,6 +38,7 @@ const i18n = createI18n({
             services: 'សេវាកម្ម',
             projects: 'គម្រោង',
             setting: 'ការកំណត់',
+            fileview: 'មើលឯកសារ',
             productTitle: 'សូមស្វាគមន៍មកកាន់គម្រោងរបស់យើង',
         }
     }
