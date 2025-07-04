@@ -47,6 +47,16 @@
                                 {{ $t('setting') }}
                             </router-link>
                         </li>
+                         <li>
+                            <router-link class="text-gray-500 transition hover:text-gray-500/75" to="/upload">
+                                {{ $t('upload') }}
+                            </router-link>
+                        </li>
+                         <li>
+                            <router-link class="text-gray-500 transition hover:text-gray-500/75" to="/fileview">
+                                {{ $t('fileview') }}
+                            </router-link>
+                        </li>
                     </ul>
                 </nav>
 

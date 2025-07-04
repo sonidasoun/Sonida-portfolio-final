@@ -9,13 +9,17 @@ import PricingList from '@/components/PricingList.vue'
 import Project from '@/pages/Project.vue'
 import ProjectPage from '@/pages/ProjectPage.vue'
 import Registration from './pages/Registration.vue'
-import User from './pages/User.vue'
+import User from '@/pages/User.vue'
+import Upload from '@/pages/Uploads.vue'
+import FileView from '@/pages/FileViews.vue'
 
 const routes = [
     { path: '/', component: Home },
     { path: '/about', component: About },
     { path: '/register', name: 'Register', component: Registration },
     { path: '/users', name: 'Users', component: User },
+    { path: '/upload', name: 'Upload', component: Upload },
+    { path: '/fileview', name: 'fileview', component: FileView },
     {
         path: '/setting', component: Setting, children: [
             { path: '', component: Collections },
