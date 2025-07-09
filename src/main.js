@@ -43,7 +43,7 @@ const i18n = createI18n({
             projects: 'Projects',
             contact:'Contact',
             setting: 'Setting',
-          
+            hi:'Hi,I',
            
         },
         khm: {
@@ -55,6 +55,7 @@ const i18n = createI18n({
             contact:'ទំនាក់ទំនង',
             projects: 'គម្រោង',
             setting: 'ការកំណត់',
+            hi:'សួស្ដី,នាងខ្ញុំឈ្មោះ',
             
         }
     }

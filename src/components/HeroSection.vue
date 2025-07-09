@@ -9,7 +9,7 @@
                 <div class="lg:py-6">
                     <div v-if="$i18n.locale === 'khm'" class="text-center lg:text-left" @click="changeLanguage('khm')">
                          <h1 class="pt-4 text-3xl font-bold text-white md:text-3xl lg:text-4xl">
-                            សួស្ដី,នាងខ្ញុំឈ្មោះ <span class="text-yellow-500">សួន សុនីដា</span>
+                           {{$t('hi')}} <span class="text-yellow-500">សួន សុនីដា</span>
                         </h1></div>
                     <div v-else @click="changeLanguage('en')" class="text-center lg:text-left" >
                         <h1 class="pt-4 text-3xl font-bold text-white md:text-3xl lg:text-4xl">
