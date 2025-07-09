@@ -19,12 +19,12 @@
 
                       <div v-if="$i18n.locale === 'khm'" class="text-center lg:text-left" @click="changeLanguage('khm')">
                      <p class="max-w-xl pt-8 mx-auto text-center text-gray-300 lg:text-left ">
-                        ខ្ញុំជាអ្នក <span class="text-yellow-500">សរសេរកម្មវិធីលើFrontend</span> សម្រាប់បង្កើតកម្មវិធីវេប.
+                        ខ្ញុំជាអ្នក <span class="text-yellow-500">គ្រប់គ្រងទិន្នន័យនៃមជ្ឈមណ្ឌលជាតិផ្ដល់ឈាម</span> ដោយខ្ញុំជារៀបចំទិន្នន័យ.
                      </p>   
                      </div>
                       <div v-else @click="changeLanguage('en')" class="text-center lg:text-left" >
                      <p class="max-w-xl pt-8 mx-auto text-center text-gray-300 lg:text-left ">
-                        I'm a <span class="text-yellow-500">Frontend Developer</span> with a passion for creating beautiful and functional web applications.
+                        I'm a <span class="text-yellow-500">Data Mangament of NBTC</span> with collect Data and anylize problem to build system.
                      </p>   
                      </div>
                      <div class="flex items-center gap-3 pt-9-col sm:flex-row sm:m-5 sm:mx-auto lg:mx-0">
@@ -62,9 +62,9 @@
                              <a href="@/assets/CV.png" download="@/assets/CV.png" class="pl-2 text-yellow-500">ប្រវត្ដិរូបខ្ញុំ</a>
                             </div>
                             <div v-else @click="changeLanguage('en')" class="text-center lg:text-left" >
-                            <a href="@/assets/CV.png" download="@/assets/CV.png" class="pl-2 text-yellow-500">My CV</a>
+                            <a href="@/assets/CV.png" download='"@/assets/CV.png"' class="pl-2 text-yellow-500">My CV</a>
                             </div>
-                           
+                          
                         </div>
                         </button>
                          
