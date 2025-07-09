@@ -31,13 +31,17 @@
                          <div v-if="$i18n.locale === 'khm'" class="text-center lg:text-left" @click="changeLanguage('khm')">
                         <button class="relative flex justify-center w-full px-6 py-3 rounded-full md:px-7 group sm:w-max">
                             <span class="absolute inset-0 transition-all ease-in-out origin-center bg-yellow-800 border-2 border-transparent rounded-3xl group-hover:scale-105"></span>
-                             <span class="relative flex items-center justify-center text-white">សូមទាញយក -></span>
+                             <span class="relative flex items-center justify-center text-white">
+                             <a href="https://github.com/sonidasoun/Sonida-portfolio-final/tree/master"  target="_blank" class="pl-2 text-yellow-500">សូមចូលមើលកូដ</a>
+                             </span>                             
                         </button>
                         </div>
                         <div v-else @click="changeLanguage('en')" class="text-center lg:text-left" >
                            <button class="relative flex justify-center w-full px-6 py-3 rounded-full md:px-7 group sm:w-max">
                             <span class="absolute inset-0 transition-all ease-in-out origin-center bg-yellow-800 border-2 border-transparent rounded-3xl group-hover:scale-105"></span>
-                             <span class="relative flex items-center justify-center text-white">Please Download -></span>
+                             <span class="relative flex items-center justify-center text-white">
+                             <a href="https://github.com/sonidasoun/Sonida-portfolio-final/tree/master" target="_blank" class="pl-2 text-yellow-500">View Source Code</a>
+                             </span>
                         </button> 
                         </div>
                         
@@ -60,9 +64,13 @@
                             <div v-else @click="changeLanguage('en')" class="text-center lg:text-left" >
                             <a href="/src/assets/CV.jpg" download="CV.jpg" class="pl-2 text-yellow-500">My CV</a>
                             </div>
+                           
                         </div>
                         </button>
+                         
                     </div>   
+                    
+                   
                 </div>     
          </div>
                 <div class="lg:h-full md:flex">
@@ -84,6 +92,7 @@
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
+import { useLink } from 'vue-router';
 AOS.init({
     duration: 1000, // Animation duration in milliseconds
     once: true, // Whether animation should happen only once
