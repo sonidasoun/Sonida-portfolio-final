@@ -1,11 +1,11 @@
 <template>
-    <Pricing />
+    <AboutSection />
 </template>
 <script>
-import Pricing from '@/components/Pricing.vue'
+import AboutSection from '@/components/AboutSection.vue'
 export default {
     components: {
-        Pricing
+        AboutSection
     }
 }
 </script>

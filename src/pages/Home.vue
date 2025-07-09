@@ -1,14 +1,24 @@
 <template>
-    <HeroBanner />
-    <BannerLeft />
+    <HeroSection />
+    <ServiceSection />   
+    <AboutSection />
+    <ProjectSection />  
+    <Contactsection />
 </template>
 <script>
-import HeroBanner from '@/components/HeroBanner.vue'
-import BannerLeft from '@/components/BannerLeft.vue'
+
+import HeroSection from '@/components/HeroSection.vue';
+import ServiceSection from '@/components/SkillSection.vue';
+import AboutSection from '@/components/AboutSection.vue';
+import ProjectSection from '@/components/ProjectSection.vue';
+import Contactsection from '@/components/Contactsection.vue';
 export default {
-    components: {
-        HeroBanner,
-        BannerLeft
-    }
+    components: {      
+        HeroSection,
+        ServiceSection,        
+        AboutSection,
+        ProjectSection,
+        Contactsection
+  }
 }
 </script>

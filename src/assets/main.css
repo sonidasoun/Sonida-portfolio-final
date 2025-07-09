@@ -33,3 +33,5 @@ body {
 html {
   scroll-behavior: smooth;
 }
+@import "preline/variants.css";
+@source "../../node_modules/preline/dist/*.js";

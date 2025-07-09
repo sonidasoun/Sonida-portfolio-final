@@ -1,11 +1,26 @@
 import './assets/main.css'
 
 import { createApp } from 'vue'
+
 import App from './App.vue'
 import router from './routes.js'
-
 import { createI18n } from 'vue-i18n'
-import FileViews from './pages/FileViews.vue'
+
+// Optional third-party libraries
+import $ from "jquery";
+import _ from "lodash";
+import noUiSlider from "nouislider";
+import "datatables.net";
+import "dropzone/dist/dropzone-min.js";
+import * as VanillaCalendarPro from "vanilla-calendar-pro";
+
+window._ = _;
+window.$ = $;
+window.jQuery = $;
+window.DataTable = $.fn.dataTable;
+window.noUiSlider = noUiSlider;
+window.VanillaCalendarPro = VanillaCalendarPro;
+
 
 /**
  * About
@@ -20,26 +35,27 @@ const i18n = createI18n({
     fallbackLocale: 'khm',
     messages: {
         en: {
-            hello: 'hello world',
-            about: 'About',
+            home: 'Home',
+            about:'About',
             register: 'Register',
             user: 'User',
-            services: 'Services',
+            skill: 'Skills',
             projects: 'Projects',
+            contact:'Contact',
             setting: 'Setting',
-            fileview: 'File Views',
-            productTitle: 'Welcome to our project',
+          
+           
         },
         khm: {
-            hello: 'សួស្តី​ពិភពលោក',
+            home:'ទំព័រដើម',
             about: 'អំពីយើង',
             register: 'ចុះឈ្មោះ',
             user: 'អ្នកប្រើប្រាស់',
-            services: 'សេវាកម្ម',
+            skill: 'ជំនាញ',
+            contact:'ទំនាក់ទំនង',
             projects: 'គម្រោង',
             setting: 'ការកំណត់',
-            fileview: 'មើលឯកសារ',
-            productTitle: 'សូមស្វាគមន៍មកកាន់គម្រោងរបស់យើង',
+            
         }
     }
 }
@@ -51,3 +67,4 @@ app.use(i18n)
 
 
 app.mount('#app')
+import("preline/dist/index.js")

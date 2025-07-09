@@ -1,15 +1,23 @@
 <template>
+  <div class="min-h-screen bg-[#09095a]">     
+  <LoginModal />
+  <RegisterModal />
   <HyperHeader v-if="$route.name != 'NotFound'" />
-  <router-view />
+  <router-view />  
   <HyperFooter v-if="$route.name != 'NotFound'" />
+  </div>
 </template>
 <script>
-import HyperHeader from './components/HyperHeader.vue';
-import HyperFooter from './components/HyperFooter.vue';
+import HyperHeader from './components/HeaderSection.vue';
+import HyperFooter from './components/FooterSection.vue';
+import LoginModal from './components/LoginModal.vue';
+import RegisterModal from './components/RegisterModal.vue';
 export default {
   components: {
     HyperHeader,
-    HyperFooter
+    HyperFooter,
+    LoginModal,
+    RegisterModal
   }
 }
 </script>
