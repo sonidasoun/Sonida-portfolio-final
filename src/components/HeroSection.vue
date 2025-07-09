@@ -59,10 +59,10 @@
                                 <div class="hidden text-white download-loader"></div>
                              </div>
                             <div v-if="$i18n.locale === 'khm'" class="text-center lg:text-left" @click="changeLanguage('khm')">
-                             <a href="/src/assets/CV.png" download="CV.png" class="pl-2 text-yellow-500">ប្រវត្ដិរូបខ្ញុំ</a>
+                             <a href="/src/assets/CV.png" download="CV.ext" class="pl-2 text-yellow-500">ប្រវត្ដិរូបខ្ញុំ</a>
                             </div>
                             <div v-else @click="changeLanguage('en')" class="text-center lg:text-left" >
-                            <a href="/src/assets/CV.png" download="CV.png" class="pl-2 text-yellow-500">My CV</a>
+                            <a href="/src/assets/CV.png" download="CV.ext" class="pl-2 text-yellow-500">My CV</a>
                             </div>
                            
                         </div>
