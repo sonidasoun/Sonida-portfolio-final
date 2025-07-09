@@ -53,23 +53,23 @@ import { Form } from 'vee-validate';
             <div  
             style="background: #111a3e; width:100%;height:100%; border-radius:20px;
             overflow:hidden;border:1px solid#111a3e;backdrop-filter:blur(9px);-webkit-backdrop-filter:blur(9px);">
-            <Form class="flex flex-col p-2" data-aos="zoom-in-up" name="contact" netlify>
+            <Form class="flex flex-col p-2" data-aos="zoom-in-up" name="/src/pages/Contact.vue" method="POST" data-netlify="true">
                 <div class="mb-6">
                     <label for="email" class="block mb-2 text-sm font-medium text-white">email</label>
                     <input type="email" id="email" class="bg-[#111827] placeholder:[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                    placeholder="email@gmail.com" name="email">
+                    placeholder="email@gmail.com" name="email" required />
                 </div>
                    <div class="mb-6">
                     <label for="subject" class="block mb-2 text-sm font-medium text-white">Subject</label>
                     <input type="subject" id="subject" class="bg-[#111827] placeholder:[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                    placeholder="subject" name="subject">
+                    placeholder="subject" name="subject" required />
                 </div>
                    <div class="mb-6">
                     <label for="message" class="block mb-2 text-sm font-medium text-white">Message</label>
                     <textarea id="message" class="bg-[#111827] placeholder:[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                     placeholder="Let's talk about....." name="message"></textarea>
                 </div>
-                <button class="z-1 w-[100%important] px-6 md:px-7 py-3 rounded-full sm:w-max flex justify-center text-white bg-amber-500 border-2 border-transparent">
+                <button type="submit" class="z-1 w-[100%important] px-6 md:px-7 py-3 rounded-full sm:w-max flex justify-center text-white bg-amber-500 border-2 border-transparent">
                     Send Message
                 </button>
             </Form>            
