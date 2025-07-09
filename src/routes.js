@@ -10,8 +10,6 @@ import Registration from './pages/Registration.vue'
 import User from '@/pages/User.vue'
 import Skill from '@/pages/Skill.vue'
 import LogIn from './pages/LogIn.vue'
-
-
 const routes = [
     { path: '/', component: Home },
     { path: '/about',name:'About', component: About },
@@ -22,9 +20,7 @@ const routes = [
     { path: '/project',name:'Project', component: Project },
     { path: '/project/:name', name: 'ProjectDetail', component: ProjectPage, props: true },
    { path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFound },
-   {path:'/login',name:'login',component:LogIn},
-    
-]
+   {path:'/login',name:'login',component:LogIn},]
 
 
 const router = createRouter({
